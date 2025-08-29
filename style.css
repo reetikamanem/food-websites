@@ -1,0 +1,73 @@
+.{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+body{
+     width: 100%;
+     min-height: 100vs;
+     background: #f8f8f8;
+
+}
+header{
+      height: 60px;
+      width: 100%;
+      background: #222122;
+      color: #fff;
+      display: flex;
+      align-items: center;
+}
+container{
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+ nav ul li{
+    list-style: none;
+    display: inline;
+    margin-right: 30px;
+    font-weight: 650;
+    
+ }
+ .logo{
+    font-size: 24px;
+
+ }
+.reema{
+    width: 100%;
+    height:auto;
+    background:url(/asset/WhatsApp\ Image\ 2025-08-29\ at\ 2.03.11\ PM\ \(1\).jpeg);
+    background-size:2500px;
+    background-position:center;
+    color: #fff ;
+    text-aling:center;
+    padding: 140px;
+}
+ .hero p{
+    font-size: 20px;
+    margin-bottom: 10px;
+
+  }
+  search-box{
+    max-width: 550px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: red;
+  }
+   search-box input{
+     width: 70%;
+     padding: 10px;
+     outline: none;
+     border: 0;
+     border-radius: 5px 0 0 5px;
+     font: size 1rem;
+     border:1px solid:rgb(2455, 37, 9)
+   }
+   
+
+   

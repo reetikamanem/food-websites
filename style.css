@@ -1,35 +1,52 @@
-.{
+.manem{
     margin:0;
     padding: 0;
     box-sizing: border-box;
     font-family: sans-serif;
 }
+html{
+  height:100% ;
+}
 body{
      width: 100%;
      min-height: 100vs;
      background: #f8f8f8;
+     display: flex;
+     flex-direction:column ;
 
 }
 header{
-      height: 60px;
       width: 100%;
+      height: 100px;
       background: #222122;
       color: #fff;
       display: flex;
       align-items: center;
 }
-container{
-    width: 100%;
+.container{
+    width: 90%;
     margin: 0 auto;
     display: flex;
-    align-items: center;
+    align-items:center;
     justify-content: space-between;
+    text-justify: auto;
+
 }
+
+
+
+
+  .nav-list{
+    display: 110px;
+
+  }
+
  nav ul li{
-    list-style: none;
+    list-style:110px;
     display: inline;
     margin-right: 30px;
     font-weight: 650;
+  
     
  }
  .logo{
@@ -40,34 +57,147 @@ container{
     width: 100%;
     height:auto;
     background:url(/asset/WhatsApp\ Image\ 2025-08-29\ at\ 2.03.11\ PM\ \(1\).jpeg);
-    background-size:2500px;
+    background-size:cover;
     background-position:center;
-    color: #fff ;
-    text-aling:center;
+    background-repeat: no-repeat;
+    color:#fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     padding: 140px;
+    text-align: center;
+    font-size: 85px;
 }
- .hero p{
-    font-size: 20px;
+ .reema p{
+    font-size: 70px;
     margin-bottom: 10px;
+    text-align: center;
+    color:black;
 
   }
-  search-box{
-    max-width: 550px;
-    margin: auto;
+  .search-box{
+    max-width: 1000px;
+    margin: 15px auto;
     display: flex;
     align-items: center;
     justify-content: center;
     background: red;
+    border: solid #ff0000;
+    height: 30px;
   }
-   search-box input{
-     width: 70%;
+.Search{
+     width: 2000px;
      padding: 10px;
      outline: none;
      border: 0;
-     border-radius: 5px 0 0 5px;
-     font: size 1rem;
-     border:1px solid:rgb(2455, 37, 9)
+     border-radius: 10px 0px 0px 10px;
+     font-size: 1rem;
+     border:1px solid rgb(245, 37, 9);
+     color: #1d1919;
+     cursor:pointer;
+  
    }
    
+button{
 
-   
+     padding: 10px 20px;
+     outline: none;
+     border: 0;
+     border-radius: 0px 10px 10px 0px;
+     font: size 1rem;
+     border:1px solid rgb(245, 37, 9);
+     background-color: red;
+}
+/*---------Featured Recipe-------*/
+.recipe-section hover h1{
+  text-align: center;
+  margin-bottom: 30px;
+  font-family: 28px;
+
+}
+.recipe hover{
+  display: flex;
+  flex-wrap: wrap;
+}
+.recipe-section hover{
+  width: 90%;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit-minmax(250px, 1pr));
+  column-gap: 10px;
+}
+.recipe-card hover{
+  background: #fff;
+  margin: 30px 10px;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+   overflow: hidden;
+   box-shadow:0 5px 4px rgba(0, 0, 0, 1) ;
+
+}
+.recipe-card{
+  background: #fff;
+  margin:30px 10px;
+  border-radius:10px;
+  border-radius: 1px solid#ccc;
+  grid-template-columns: repeat(auto-fit-minmax(250px,1pr));
+  column-gap:10px ;
+  float: left;
+
+}
+.recipe-card img {
+  width: 550px;
+  height: 450px;
+  object-fit: cover;
+  border-top-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  float: left;
+
+
+}
+.recipe-card hover h1{
+  font-size: 22px;
+  padding: 20px;
+  float: left;
+}
+.recipe-card hover p{
+  font-size: 18px;
+  padding: 20px;
+}
+.recipe-card hover a{
+  display: block;
+  text-align: center;
+  text-decoration: none;
+  background: #333;
+  color: #fff;
+  padding: 15px 0;
+  cursor: pointer;
+  float: left;
+}
+
+.footer{
+  background: #333;
+  padding: 20px 0;
+  color: #fff;
+  text-align:center;
+  margin-top: auto;
+
+}
+.menu-icon{
+  font-size: 24px;
+  padding: 22px;
+  text-align: center;
+  display: block;
+  align-items: center;
+}
+
+@media only screen  and(min-width:768px){
+  .menu-icon{
+    display: none;
+
+  }
+  .nav-list{
+    display: block;
+
+  }
+}
